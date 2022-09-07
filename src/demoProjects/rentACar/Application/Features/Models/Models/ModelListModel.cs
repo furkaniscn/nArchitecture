@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Models.Models
 {
-    public class ModelListModel:BasePageableModel
+    public class ModelListModel : BasePageableModel
     {
         public IList<ModelListDto> Items { get; set; }
     }

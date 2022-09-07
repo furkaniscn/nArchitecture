@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Model:Entity // Sen bir veritabanı nesnesisin.
+    public class Model : Entity
     {
         public int BrandId { get; set; }
         public string Name { get; set; }
@@ -17,16 +17,15 @@ namespace Domain.Entities
 
         public Model()
         {
-
         }
 
-        public Model(int id, int brandId, string name, decimal dailyPrice, string ımageUrl):this()
+        public Model(int id, int brandId, string name, decimal dailyPrice, string imageUrl) : this()
         {
+            Id = id;
+            BrandId = brandId;
             Name = name;
             DailyPrice = dailyPrice;
-            ImageUrl = ımageUrl;
-            BrandId = brandId;
-            Id = id;
+            ImageUrl = imageUrl;
         }
     }
 }
